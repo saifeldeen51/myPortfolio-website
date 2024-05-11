@@ -6,7 +6,10 @@ export default function Document() {
       <Head />
       <link rel="icon" href="/favicon.ico" />
       <body className="font-primary scrollbar">
+        <div className="wrapper">
         <Main />
+        </div>
+
         <NextScript />
       </body>
     </Html>

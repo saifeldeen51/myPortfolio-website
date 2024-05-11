@@ -23,12 +23,17 @@ const HomePage = () => {
 
   useEffect(()=>{
 
-    const fakeDataFetch = () =>{
-      setTimeout(() =>{
-        setIsLoading(false);
-      },3000);
-    }
-    fakeDataFetch();
+ // Check if it's a mobile device
+ const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+ if (!isMobileDevice) {
+   // If it's not a mobile device, simulate loading for 2 seconds
+   setTimeout(() => {
+     setIsLoading(false);
+   }, 2000);
+ } else {
+   // If it's a mobile device, set isLoading to false immediately
+   setIsLoading(false);
+ }
 
 
 
