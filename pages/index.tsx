@@ -36,7 +36,7 @@ const HomePage = () => {
  }
 
 
-
+ document.title = "Saif Nosair";
     // You can also pass an optional settings object
     // below listed default settings
     AOS.init({
