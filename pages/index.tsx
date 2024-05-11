@@ -72,7 +72,7 @@ const HomePage = () => {
         <Nav openNav={openNav} />
         
         <Hero />
-        <div className="relative z-[30]">
+        <div className="relative z-[30] wrapper">
 
           <About />
           <Services />
