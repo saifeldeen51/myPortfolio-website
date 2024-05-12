@@ -15,10 +15,12 @@ const Contact = () => {
 
   // Function to handle form submission
 
-  const form = useRef<HTMLFormElement>(null);
+  const form = useRef<HTMLFormElement | null>(null); // Initialize with null
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-
+      
+  
+    if (form.current) {
     emailjs
       .sendForm('service_9q3lcb9', 'template_qc0hsir', form.current, {
         publicKey: 'FLJQqKdpRsRK-1yRE',
@@ -31,6 +33,7 @@ const Contact = () => {
           console.log('FAILED...', error.text);
         },
       );
+    }
   
     // Validate email format
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
