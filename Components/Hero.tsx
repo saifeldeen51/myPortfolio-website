@@ -24,11 +24,11 @@ const Hero = () => {
         </button> </a>
         <button className='flex items-center space-x-2'>
           <PlayCircleIcon className='w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]'/>
-          <p className='text-[20px] font-semibold text-white'>Watch The Video</p>
+          <p className='text-[20px] font-semibold text-white'>Watch The Showreel</p>
         </button>
       </div>
       </div>
-      <div className='w-[500px] hidden bg-yellow-400 relative lg:flex items-center rounded-full h-[500px]'>
+      <div className='w-[480px] hidden bg-yellow-400 relative lg:flex items-center rounded-full h-[480px]'>
           <img src="/images/u1.png" alt="user" className="object-cover rounded-full" />
       </div>
     </div>

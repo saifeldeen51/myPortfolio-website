@@ -6,6 +6,7 @@ import About from "@/Components/About";
 import Services from "@/Components/Services";
 import Skills from "@/Components/Skills";
 import Projects from "@/Components/Projects";
+import Awards from "@/Components/Awards";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Contact from "@/Components/Contact";
@@ -78,6 +79,7 @@ const HomePage = () => {
           <Services />
           <Skills />
           <Projects />
+          <Awards/>
           <Contact/>  
           <GoToTop/>
           <Footer/>

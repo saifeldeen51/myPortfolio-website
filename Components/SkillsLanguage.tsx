@@ -5,13 +5,15 @@ interface Probs{
   skill2: string;
   skill3: string;
   skill4: string;
+  skill5: string;
   level1: string;
   level2: string;
   level3: string;
   level4: string;
+  level5: string;
 }
 
-const SkillsLanguage = ({skill1,skill2,skill3,skill4,level1,level2,level3,level4}: Probs) => {
+const SkillsLanguage = ({skill1,skill2,skill3,skill4,skill5,level1,level2,level3,level4,level5}: Probs) => {
   return (
   <div>
     <div className='relative mb-[3rem]'>
@@ -37,6 +39,12 @@ const SkillsLanguage = ({skill1,skill2,skill3,skill4,level1,level2,level3,level4
         {skill4}
       </h1>
       <span className={`${level4} bottom-0 h-[6px] absolute bg-[#55e6a5]`}></span>
+    </div>
+    <div className='relative mb-[3rem]'>
+      <h1 className='p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold'>
+        {skill5}
+      </h1>
+      <span className={`${level5} bottom-0 h-[6px] absolute bg-[#55e6a5]`}></span>
     </div>
   </div>
   );

@@ -26,6 +26,8 @@ const Nav: React.FC<Props> = ({openNav}) => {
     <div className="nav-link" >Experiences</div></Link>
     <Link to='projects' smooth={true} duration={500} spy={true} offset={-70}>
     <div className="nav-link">Projects</div></Link>
+    <Link to='awards' smooth={true} duration={500} spy={true} offset={-70}>
+    <div className="nav-link">Awards</div></Link>
     <Link to='contact' smooth={true} duration={500} spy={true} offset={-70}>
     <div className="nav-link">Contact</div></Link>
   
