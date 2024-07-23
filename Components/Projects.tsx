@@ -6,7 +6,7 @@ import { PlayIcon } from '@heroicons/react/20/solid'; // Import PlayIcon from He
 const Projects = () => {
 
   // Initialize an array to track the visibility of each video
-  const [showVideos, setShowVideos] = useState([false, false, false]);
+  const [showVideos, setShowVideos] = useState(Array(21).fill(false));
 
   // Function to handle video click and toggle visibility
   const handleVideoClick = (index: number) => {
@@ -57,7 +57,7 @@ const Projects = () => {
 
 
         <div >
-        <div data-aos='fade-up' data-aos-delay='600' className='cursor-pointer group'>
+        <div data-aos='fade-up' data-aos-delay='400' className='cursor-pointer group'>
   <div className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]'>
     <a href="/images/deltakon.pdf" target="_blank"> 
       <Image src='/images/projects/graphic/tknka3.png' alt='portfolio' layout='fill' className='object-contain'/>
@@ -109,9 +109,9 @@ const Projects = () => {
 
 
         <div>
-        <div data-aos='fade-up' data-aos-delay='400' className='transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(2)}>
-          {showVideos[2] ?(
-          <ReactPlayer url='/videos/geometric-shapes.mp4' controls={true} width='100%' height='100%' config={{
+        <div data-aos='fade-up' data-aos-delay='100' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(1)}>
+          {showVideos[1] ?(
+          <ReactPlayer url='/videos/tamer.mp4' controls={true} width='100%' height='100%' config={{
             file: {
               attributes: {
                 controlsList: 'nodownload noplaybackrate', // Disable download button
@@ -120,26 +120,318 @@ const Projects = () => {
           }}/>
           ):(
             <>
-            <Image src='/images/p2.png' alt='Video Thumbnail' layout='fill' className='object-cover'/>
+            <Image src='/images/thumb/tamer.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
             <div className="absolute inset-0 flex justify-center items-center">
-                  <PlayIcon className="h-16 w-16 text-[#55e6a5] border-style-dashed opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
             </div>
             </>
-          )}
-
+          )}     
           </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>Tamer Hosny - Ahla Kalam</h2>
+        </div>
 
 
 
+        <div>
+        <div data-aos='fade-up' data-aos-delay='200' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(2)}>
+          {showVideos[2] ?(
+          <ReactPlayer url='/videos/icpc.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/icpc.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
           <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>ICPC Top 10 - GIF</h2>
+        </div>
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='300' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(3)}>
+          {showVideos[3] ?(
+          <ReactPlayer url='/videos/logo.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/logo.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
           <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>My Logo Animation</h2>
+        </div>
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='400' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(4)}>
+          {showVideos[4] ?(
+          <ReactPlayer url='/videos/meza.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/meza.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
           <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>Meza - Skip AD</h2>
+        </div>
+
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='450' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(5)}>
+          {showVideos[5] ?(
+           <img
+           src="/videos/tknkaapp1.gif"
+           alt="Animated GIF"
+           className="object-cover rounded-lg w-full h-full"/>
+          ):(
+            <>
+            <Image src='/images/thumb/tknkaapp1.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
           <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>TKNKA App - UI Animation</h2>
+        </div>
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='500' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(6)}>
+          {showVideos[6] ?(
+           <img
+           src="/videos/tknkaapp2.gif"
+           alt="Animated GIF"
+           className="object-cover rounded-lg w-full h-full"/>
+          ):(
+            <>
+            <Image src='/images/thumb/tknkaapp2.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>TKNKA App - UI Animation</h2>
+        </div>
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='550' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(7)}>
+          {showVideos[7] ?(
+           <img
+           src="/videos/tknkaapp3.gif"
+           alt="Animated GIF"
+           className="object-cover rounded-lg w-full h-full"
+           />
+          ):(
+            <>
+            <Image src='/images/thumb/tknkaapp3.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>TKNKA App - UI Animation</h2>
+        </div>
+
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='600' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(8)}>
+          {showVideos[8] ?(
+            <img
+            src="/videos/deltakon.gif"
+            alt="Animated GIF"
+            className="object-cover rounded-lg w-full h-full"
+            />
+          ):(
+            <>
+            <Image src='/images/thumb/deltakon.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>Deltakon - Logo Animation</h2>
+        </div>
+
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='650' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(9)}>
+          {showVideos[9] ?(
+          <ReactPlayer url='/videos/tknka-intro.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/tknka-intro.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>TKNKA - Motion Teaser</h2>
+        </div>
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='700' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(10)}>
+          {showVideos[10] ?(
+          <ReactPlayer url='/videos/tknka-services.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/tknka-services.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>TKNKA Services</h2>
+        </div>
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='750' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(11)}>
+          {showVideos[11] ?(
+          <ReactPlayer url='/videos/tknka-teaser.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/tknka-teaser.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>TKNKA Journey</h2>
+        </div>
+
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='800' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(12)}>
+          {showVideos[12] ?(
+          <ReactPlayer url='/videos/ramadan.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/ramadan.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>Ramadan - Skip AD </h2>
+        </div>
+
+
+
+
+        <div>
+        <div data-aos='fade-up' data-aos-delay='850' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(13)}>
+          {showVideos[13] ?(
+          <ReactPlayer url='/videos/portfolio.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/portfolio.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>My Portfolio Teaser</h2>
+        </div>
+
+
+
 
         </div>
+        <br></br>
+          <br></br>
+          <br></br>
         </div>
       </div>
-    </div>
   );
 };
 
