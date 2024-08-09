@@ -427,6 +427,44 @@ const Projects = () => {
 
 
         </div>
+
+        {/*Motion Graphic Section*/}
+
+      
+        </div>
+        <div className='w-[80%] pt-[5rem] text-center mx-auto '>
+        <br></br>
+        <h1 className='heading'>
+        Video<span className='text-yellow-400'> Editing</span>
+      </h1>
+      <br></br>
+      <div className='pt-[3rem] justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem]'>
+
+      <div>
+        <div data-aos='fade-up' data-aos-delay='850' className='transform group-hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]' onClick={() => handleVideoClick(13)}>
+          {showVideos[13] ?(
+          <ReactPlayer url='/videos/portfolio.mp4' controls={true} width='100%' height='100%' config={{
+            file: {
+              attributes: {
+                controlsList: 'nodownload noplaybackrate', // Disable download button
+              },
+            },
+          }}/>
+          ):(
+            <>
+            <Image src='/images/thumb/portfolio.png' alt='Video Thumbnail' layout='fill' className='object-cover rounded-lg'/>
+            <div className="absolute inset-0 flex justify-center items-center">
+                  <PlayIcon className="h-16 w-16 text-[#55e6a5] opacity-90 hover:opacity-100 hover:text-yellow-400 transition-opacity" />
+            </div>
+            </>
+          )}     
+          </div>
+          <br></br>
+          <h2 className='transform group-hover:-translate-y-6 hover:text-yellow-400 transition-all duration-200 text-center text-[#55e6a5] text-xl md:text-2xl'>My Portfolio Teaser</h2>
+        </div>
+
+        </div>
+
         <br></br>
           <br></br>
           <br></br>
